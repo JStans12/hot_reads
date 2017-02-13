@@ -16,10 +16,9 @@ ActiveRecord::Schema.define(version: 20170213223440) do
   enable_extension "plpgsql"
 
   create_table "reads", force: :cascade do |t|
-    t.integer  "count",      default: 0
     t.string   "url"
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

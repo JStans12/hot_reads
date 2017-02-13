@@ -1,6 +1,6 @@
 class ReadsController < ApplicationController
 
   def index
-    @reads = Read.all
+    @reads = Read.in_last_day
   end
 end

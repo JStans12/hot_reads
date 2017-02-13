@@ -1,0 +1,9 @@
+<table class='reads-table'>
+  <th>Url</th><th>Read Count</th>
+  <% @reads.each do |read| %>
+    <tr>
+      <td><%= read[0] %></td>
+      <td><%= read[1] %></td>
+    </tr>
+  <% end %>
+</table>
